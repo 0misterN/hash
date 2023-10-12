@@ -7,11 +7,14 @@ unsigned int *engine(unsigned int *ptr){
     unsigned long long int res = 0x0000;
     int padding = 0x1001;
     int iterations = sizeof(array) % ;
+    int rep_bool = 0;
+    int index = 0
     for (int i = 0; i<size;i++){
+        index = size % 64;
         res |= ptr[i];
         res <<= 4;
         if (res >> 60) {
-
+            rep_bool = 1;
         }
     }
 }

@@ -3,7 +3,7 @@
 #include "stdio.h"
 #include "string.h"
 #include "stdlib.h"
-int *char_list(char *charset){
+unsigned long *char_list(char *charset){
     int *ptr;
     unsigned int size;
     size = strlen(charset);
@@ -19,7 +19,7 @@ int *char_list(char *charset){
     unsigned int res[2];
     res[0] = size;
     res[1] = *ptr;
-    unsigned long int *ptr2 = 
-    return ;
+    unsigned long int *ptr2 = &res;
+    return ptr2;
 }
 #endif //BASE_MK_CHAR_LIST_H
